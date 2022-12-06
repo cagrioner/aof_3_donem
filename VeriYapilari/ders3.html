@@ -1,0 +1,157 @@
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Veri Yapıları</title>
+
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+                        <link rel="stylesheet" href="../styles/styles.css"></head>
+                        <body>
+                            <!-- Navigation -->
+                            <nav class="navbar navbar-expand-lg bg-light">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">Bilgisayar Programcılığı 3. Dönem</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="../index.html">Ana Sayfa</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../MobilUygulamaGelistirme/index.html">Mobil Uygulama Geliştirme</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../ProglamaII/index.html">Programlama-II Python</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../WebArayuz/index.html">Web Arayüz Programlama</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="../VeriYapilari/index.html">Veri Yapıları</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="../Unix/index.html">Unix Sistem Yönetimi</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="container">
+                                <h1>Veri Yapıları</h1>
+                                <h3>Ders 3: Yığın ve Kuyruk (Stack and Queue)</h3>
+                                <div class="d-flex flex-row justify-content-evenly">
+                                    <div class="card bg-info text-white m-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                GİRİŞ
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    <samp>Array ve ArrayList,</samp>verilerle çalışmak için uygun bir biçimde gruplandırmaya yardımcı olsa da her iki yapıda da sorun çözümlerini fiilen tasarlamak ve uygulamak için gerçek bir soyutlama sağlamaz.
+                                                </li>
+                                                <li>Anlaşılması kolay soyutlamalar sağlayan liste yönelimli iki veri yapısı yığın ve kuyruk yapılarıdır.</li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-evenly">
+                                    <div class="card bg-info text-white m-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                STACK (YIĞIN)
+                                            </h5>
+                                            <ul>
+                                                <li>Tek taraflı veri giriş ve çıkışına izin veren yığın yapısı, verileri sıralı olarak tutar.</li>
+                                                <li>Yığın; yalnızca yığının tepesi olarak adlandırılan, listenin sonundan erişilebilen ögelerin bir listesi olarak tanımlanabilir.</li>
+                                                <li>Restauranttaki tabaklar</li>
+                                                <li>LIFO (İlk Giren Son Çıkar) Last In First Out</li>
+                                                <li>
+                                                    <samp>
+                                                        <mark>Push, Pop, Peek</mark>
+                                                    </samp>
+                                                </li>
+                                                <li>Varsayılan stack oluşturucusu,
+                                                    <b>başlangıç kapasitesi 10 veri olan boş bir yığın</b>
+                                                    oluşturur.</li>
+                                                <li>
+                                                    <samp>
+                                                        <mark>Clear, Contains, CopyTo, ToArray</mark>
+                                                    </samp>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <img src="../assets/images/stack.png" alt=""></div>
+                                    <div class="d-flex flex-row justify-content-evenly">
+                                        <div class="card bg-info text-white m-3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">QUEUE (Kuyruk)</h5>
+                                                <ul>
+                                                    <li>Kuyruk; verilerin liste olarak
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        tutulduğu,</li>
+                                                    <li>gelen verinin listenin arkasına eklendiği,</li>
+                                                    <li>kaldırma işleminin ise listenin önündeki veriye uygulandığı bir yapıdır</li>
+
+
+                                                    <li>ilk önce giren veri ilk çıkar (FIFO- First In First Out).</li>
+                                                    <li>
+                                                        <samp>
+                                                            <mark>Enqueue, Dequeue, Peek</mark>
+                                                        </samp>
+
+                                                    </li>
+                                                    <li>Queue nesnesi kullanılarak yeni bir kuyruk oluşturulabilir. Nesne varsayılan olarak
+                                                        <b>
+                                                            32 eleman kapasiteli
+                                                        </b>bir kuyruk oluşturur. Kuyruğun kapasitesi doldukça bir sonraki kapasite iki katı olacak şekilde arttırılır.</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <img src="../assets/images/kuyruk.png" alt=""></div>
+
+                                        <div class="d-flex flex-row justify-content-evenly">
+                                            <div class="card border-info p-3">
+                                                <code>
+                                                    <p class="text-muted">
+                                                        <em>//Kuyruk oluşturma.
+                                                        </em>
+                                                    </p>
+                                                    <p>Queue kuyruk = new Queue(100);</p>
+                                                    <hr>
+                                                        <p class="text-muted">
+                                                            <em>// Kod bloğunda belirtilen 3 rakamından dolayı
+                                                                                                                                                                                                                                                                                                                        kuyruğun kapasitesi dolduktan sonra yeni boyut 300 olacaktır</em>
+                                                        </p>
+
+                                                        <p>Queue kuyruk = new Queue(100, 3);</p>
+                                                        <hr>
+                                                            <p class="text-muted">
+                                                                <em>//Jenerik kuyruk oluşturma</em>
+                                                            </p>
+                                                            <p>Queue&lt;int&gt;
+                                                                                                                                                                                                                                                        numbers = new Queue<int>();</p>
+
+
+                                                            </code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end container -->
+                                                <!-- JavaScript Bundle with Popper -->
+                                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+                                            </body>
+                                        </html>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>

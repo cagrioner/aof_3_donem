@@ -1,0 +1,551 @@
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Veri Yapıları</title>
+
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+                        <link rel="stylesheet" href="../styles/styles.css"></head>
+                        <body>
+                            <!-- Navigation -->
+                            <nav class="navbar navbar-expand-lg bg-light">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">Bilgisayar Programcılığı 3. Dönem</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" aria-current="page" href="../index.html">Ana Sayfa</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../MobilUygulamaGelistirme/index.html">Mobil Uygulama Geliştirme</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../ProglamaII/index.html">Programlama-II Python</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../WebArayuz/index.html">Web Arayüz Programlama</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="../VeriYapilari/index.html">Veri Yapıları</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link " href="../Unix/index.html">Unix Sistem Yönetimi</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <div class="container" style="margin-top:40px;">
+                                <h1>Veri Yapıları</h1>
+                                <h3>Ders 2: Dizi, Sözlük, Küme, Listeler</h3>
+                                <div class="d-flex flex-row justify-content-evenly">
+
+                                    <div class="card text-white bg-success m-3">
+                                        <div class="card-header">Dizi</div>
+                                        <div class="card-body">
+
+                                            <p class="card-text">
+                                                <ol>
+                                                    <li>Aynı türden birçok değişkeni saklamak için kullanılabilen bir veri yapısıdır.</li>
+                                                    <li>Bir dizideki eleman sayısı ilk değer atama (initialization) işleminden sonra değiştirilemez.</li>
+                                                </ol>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="card border-success">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tek boyutlu diziler</h5>
+                                            <code>
+                                                <p>int[] sayi_dizisi= new int[] { 13, 4, 26, -7, 0 };</p>
+                                                <p>int[] sayi_dizisi= { 13, 4, 26, -7, 0 };</p>
+
+                                            </code>
+
+                                            <h5 class="card-title">Çok boyutlu diziler</h5>
+                                            <code>
+                                                <p>int[,] sayilar = new int[5, 3];</p>
+
+                                            </code>
+
+                                            <code>
+                                                <p>int[,] sayilar = new int[,] {</p>
+                                                <p class="ms-5">{ 4, -6, -7 }</p>
+                                                <p class="ms-5">{ -11, 4, 0 },</p>
+
+                                                <p class="ms-5">{ -12, -9, 15 },</p>
+
+                                                <p class="ms-5">{ 6, 19, -3 },</p>
+
+                                                <p class="ms-5">{ 9, -56, 9 },</p>
+
+                                                <p class="ms-5">};</p>
+
+                                            </code>
+
+                                            <h5 class="card-title">Dizi dizileri (Jagged Arrays)</h5>
+
+                                            <code>
+                                                <p>int[][] sayılar = new int[4][];</p>
+                                                <p>int[][] sayılar =</p>
+                                                <p class="ms-5">{</p>
+                                                <p class="ms-5">new int[] { 13, 0, 19 },</p>
+                                                <p class="ms-5">new int[] { 7, 21, 5, 2, 71 },</p>
+                                                <p class="ms-5">null,</p>
+                                                <p class="ms-5">new int[] { 26 }</p>
+                                                <p class="ms-5">} ;</p>
+                                            </code>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row justify-content-evenly mt-3">
+
+                                    <div class="card text-white bg-success m-3">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hashtables</h5>
+
+                                            <ul>
+                                                <li>In Hashtable, the key cannot be null, but value can be.</li>
+                                                <li>In Hashtable, key objects must be immutable as long as they are used as keys in the Hashtable.</li>
+                                                <li>The capacity of a Hashtable is the number of elements that Hashtable can hold.</li>
+                                                <li>A hash function is provided by each key object in the Hashtable.</li>
+                                                <li>The Hashtable class implements the IDictionary, ICollection, IEnumerable, ISerializable, IDeserializationCallback, and ICloneable interfaces.</li>
+                                                <li>In hashtable, you can store elements of the same type and of the different types.</li>
+                                                <li>The elements of hashtable that is a key/value pair are stored in DictionaryEntry, so you can also cast the key/value pairs to a DictionaryEntry.</li>
+                                                <li>In Hashtable, key must be unique. Duplicate keys are not allowed.</li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card m-3 bg-success text-white">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hash Tabloları</h5>
+                                            <p>
+                                                Hash tablosunun en önemli varsayımlarından biri; Anahtara dayalı bir Değer için çok hızlı arama
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                yapabilen, O(1) işlem karmaşıklığında arama işlemi yapabilmesi gerekmektedir.
+                                            </p>
+                                            <p>Bu amaca ulaşmak için Hash Fonksiyonu kullanılmaktadır. Değerin bulunabileceği bir Kova dizini (bucket) oluşturmak için Anahtar (key) gerekmektedir. Böylece anahtarın bir değerini bulmanız gerekiyorsa koleksiyondaki tüm ve değeri almak için hash fonksiyonunu kullanabilirsiniz.
+                                            </p>
+                                            <p>
+                                                Hash tablosunun mükemmel performansı sebebiyle bu veri yapısı; ilişkisel diziler, veritabanı indeksleri veya önbellek sistemleri gibi birçok gerçek dünya uygulamasında sıklıkla kullanılmaktadır.
+                                            </p>
+                                            <p>
+                                                Görüldüğü gibi hash fonksiyonunun rolü oldukça kritiktir ve ideal olarak tüm anahtarlar için benzersiz
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        bir sonuç üretmesi beklenmektedir ancak farklı anahtarlar için aynı sonucun üretilmesi de mümkündür.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Böyle bir duruma
+                                                <b>hash çakışması (hash collision)</b>
+                                                denir ve ele alınmalıdır.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-evenly mt-3">
+
+                                    <div class="card border-success">
+                                        <code class="p-4">
+                                            <p class="text-muted">// koleksiyon oluşturma yöntemi ile sözlük oluşturulması</p>
+                                            <p>var sehirler = new Hashtable(){</p>
+                                            <p class="ms-3">{“Türkiye”, “Ankara, İstanbul, Eskişehir”},</p>
+                                            <p class="ms-3">{“İngiltere”, “London, Manchester, Birmingham”},</p>
+
+                                            <p class="ms-3">{“Hindistan”, “Mumbai, New Delhi, Pune”},</p>
+
+                                            <p class="ms-3">{“Amerika”, “Chicago, New York, Washington”}</p>
+
+                                            <p>};</p>
+                                            <p>foreach(DictionaryEntry kvp in sehirler)</p>
+                                            <p>{</p>
+                                            <p class="ms-3">Console.WriteLine(“Anahtar: {0}, Değer: {1}”, kvp.Key, kvp.Value);</p>
+                                            <p>}</p>
+                                        </code>
+                                    </div>
+
+
+                                    <div class="card border-success ms-3 p-4">
+
+
+                                        <code>
+                                            <p class="text-muted">
+                                                <em>// System.Collections ad alanından Hashtable sınıfı</em>
+                                            </p>
+
+                                            <p>Saklanan öğelerin sayısını alma
+                                                <b>(Count)</b>
+                                            </p>
+                                            <p>Yeni bir öge eklemek
+                                                <b>(Add)</b>
+                                            </p>
+                                            <p>Bir ögeyi kaldırmak
+                                                <b>(Remove)</b>
+                                            </p>
+                                            <p>Tüm ögeleri kaldırmak
+                                                <b>(Clear)</b>
+                                            </p>
+                                            <p>Koleksiyonun belirli bir anahtarı içerip içermediğini kontrol etmek
+                                                <b>(Contains ve ContainsKey)</b>
+                                            </p>
+                                            <p>Belirli bir değer bulma
+                                                <b>(ContainsValue)</b>
+                                            </p>
+
+                                        </code>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-evenly mt-3">
+                                    <div class="card bg-success text-white m-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sözlük (Dictionary)</h5>
+                                            <p>DictionaryEntry sınıfının Key ve Value özelliklerinin ikisi de nesne türündedir, bu nedenle tüm anahtarlar ve değerler aynı tipte olsa bile kutulama (boxing) ve kutudan çıkarma (unboxing)</p>
+                                            <p>Koleksiyonda verilen anahtara sahip bir öge yoksa
+                                                <b>KeyNotFoundException</b>
+                                                oluşturulur.</p>
+                                            <p>Sözlük işlemlerinde hatalardan kaçınmak için aşağıdakilerden biri uygulanabilir:</p>
+                                            <ul>
+                                                <li>Kod satırının
+                                                    <b>
+                                                        <samp>try-catch</samp>
+                                                    </b>
+                                                    bloğuna yerleştirilmesi</li>
+                                                <li>
+                                                    <b>
+                                                        <samp>ContainKey</samp>
+                                                    </b>
+                                                    kullanılarak ögenin var olup olmadığının kontrol edilmesi</li>
+                                                <li>
+                                                    <b>
+                                                        <samp>TryGetValue</samp>
+                                                    </b>
+                                                    yönteminin kullanılması</li>
+                                            </ul>
+                                            işlemleri yapılması gerekmektedir.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="card border-success ms-3 p-3">
+                                    <div class="card-body">
+                                        <code>
+                                            <p>Dictionary &lt;string, string&gt; sozluk =</p>
+                                            <p>new Dictionary &lt;string, string&gt;</p>
+
+
+                                            <p class="ms-3">{</p>
+                                            <p class="ms-5">{ "Anahtar 1", "Değer 1" },</p>
+                                            <p class="ms-5">{ "Anahtar 2", "Değer 2" }</p>
+                                            <p class="ms-3">};</p>
+                                            <hr>
+                                                <p class="text-muted">
+                                                    <em>
+                                                        // Belirli bir öğeye erişmek için:</em>
+                                                </p>
+                                                <p>string deger = dictionary["anahtar"];</p>
+                                                <hr>
+                                                    <p class="text-muted">
+                                                        <em>
+                                                            // Yeni değer ataması:</em>
+                                                    </p>
+
+                                                    <p>sozluk["anahtar"] = "yeni değer";</p>
+
+                                                    <hr>
+                                                        <p>foreach (KeyValuePair&lt;string, string&gt; ad_cift in sozluk)</p>
+                                                        <p>{</p>
+                                                        <p class="ms-3">Console.WriteLine($"{ad_cift.Key} - {ad_cift.Value}");</p>
+                                                        <p>}</p>
+
+
+                                                    </code>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex flex-row justify-content-evenly mt-3">
+                                            <div class="card m-3 bg-success text-white">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Sıralanmış Sözlük (Sorted Dictionary)</h5>
+                                                    <ul>
+                                                        <li>Sıralanmış sözlük,
+                                                            <b>
+                                                                <samp>System.Collections.Generic</samp>
+                                                            </b>
+                                                            ad alanında bulunan
+                                                            <samp>
+                                                                <b>SortedDictionary</b>
+                                                            </samp>
+                                                            genel sınıfı kullanılarak tanımlanmaktadır.</li>
+                                                        <li>Ulaşılmak istenilen ögenin koleksiyonda var olduğundan emin olunmalıdır aksi takdirde
+                                                            <samp>KeyNotFoundException</samp>
+
+                                                            hatası alınacaktır.</li>
+                                                        <li>Dictionary sınıfına benzer şekilde, bir anahtar null değerine eşit olamaz ancak koleksiyonda depolanan değerlerin türü izin veriyorsa değer null değeri alabilir.</li>
+                                                        <li>Otomatik sıralama avantajlarına rağmen SortedDictionary sınıfının Dictionary ile karşılaştırıldığında bazı performans dezavantajları vardır çünkü alma, ekleme ve çıkarma
+                                                            <b>O(log n)</b>
+                                                            karmaşıklığına sahip işlemlerdir; burada n, koleksiyondaki öge sayısıdır.</li>
+                                                        <li>SortedDictionary, SortedList’e oldukça benzer ancak bellek ve performansla ilgili sonuçlarda farklılık gösterir. Bu sınıfların her ikisi için de alma, O(log n) işlemidir ancak sıralanmamış veriler için ekleme ve çıkarma, SortedDictionary için
+                                                            <b>O(log n)</b>
+                                                            ve SortedList için
+                                                            <b>O(n)</b>’dir.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="card border-success p-3">
+                                                <code>
+                                                    <p>SortedDictionary&lt;string, string&gt; isimler = new SortedDictionary&lt;string, string&gt;();</p>
+                                                    <p class="ms-3">isimler.Add("1","Sadık");</p>
+                                                    <p class="ms-3">isimler.Add("4","Lütfi");</p>
+                                                    <p class="ms-3">isimler.Add("5","Halil");</p>
+                                                    <p class="ms-3">isimler.Add("3","Kadri");</p>
+                                                    <p class="ms-3">isimler.Add("2","İrfan");</p>
+                                                    <hr>
+                                                        <p>foreach (KeyValuePair&lt;string, string&gt;  kv in isimler)</p>
+                                                        <p class="ms-3">{</p>
+                                                        <p class="ms-5">Console.WriteLine(kv.Key+" "+kv.Value);</p>
+                                                        <p class="ms-3">}</p>
+
+                                                    </code>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row justify-content-evenly mt-3">
+                                                <div class="card m-3 bg-success text-white">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Karma Kümeler (Hash Sets)</h5>
+                                                        <p>
+                                                            C# dilinde uygulama geliştirirken
+                                                            <samp>
+                                                                <b>System.Collections.Generic</b>
+                                                            </samp>
+                                                            ad alanından HashSet sınıfının sağladığı yüksek performanslı işlemlerden yararlanılabilir. HashSet sınıfı, kümedeki ögelerin sayısını döndüren Count dahil olmak üzere birkaç özellik içermektedir.
+                                                        </p>
+                                                        <ul>
+                                                            <li>HashSet sınıfı; değerleri olmayan, yalnızca anahtarları depolayan bir sözlük olarak anlaşılabilir.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card border-success">
+                                                    <div class="card-body">
+                                                        <code>
+                                                            <ul>
+                                                                <li>Birleşim
+                                                                    <b>(UnionWith)</b>
+                                                                </li>
+                                                                <li>Kesişme
+                                                                    <b>(IntersectWith)</b>(IsSubsetOf)
+                                                                </li>
+                                                                <li>Çıkarma
+                                                                    <b>(ExceptWith)</b>
+                                                                </li>
+                                                                <li>Simetrik fark
+                                                                    <b>(SmetricExceptWith)</b>
+                                                                </li>
+                                                                <li>Parametre olarak iletilen kümenin bir alt kümesi
+                                                                    <b>(IsSubsetOf)</b>
+                                                                </li>
+                                                                <li>Parametre olarak iletilen kümenin bir üst kümesi
+                                                                    <b>(IsSupersetOf)</b>
+                                                                </li>
+                                                                <li>Parametre olarak geçirilen kümenin uygun bir alt kümesi
+                                                                    <b>(IsProperSubsetOf)</b>
+                                                                </li>
+                                                                <li>Parametre olarak geçirilen kümenin uygun bir üst kümesi
+                                                                    <b>(IsProperSupersetOf)</b>
+                                                                </li>
+                                                                <li>İki kümenin aynı ögeleri içerip içermediği
+                                                                    <b>(SetEquals)</b>
+                                                                </li>
+
+                                                                <li>İki kümenin en az bir ortak ögeye sahip olup olmadığı
+                                                                    <b>(Overlaps)</b>
+
+                                                                </li>
+
+                                                            </ul>
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row justify-content-evenly mt-3">
+                                                <div class="card m-3 bg-success text-white">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Sıralanmış Kümeler (Sorted Sets)</h5>
+                                                        <ul>
+                                                            <li>Uygun sınıf SortedSet olarak adlandırılır ve
+                                                                <samp>
+                                                                    <b>System.Collections.Generic</b>
+                                                                </samp>
+                                                                ad alanında bulunmaktadır.</li>
+                                                            <li>Ayrıca, minimum ve maksimum değerleri döndürmek için ek özellikler içerir
+                                                                <samp>
+                                                                    <b>(Min ve Max)</b>
+                                                                </samp>
+                                                            </li>
+                                                            <li>Verilen aralıktaki değerlerle bir SortedSet örneği döndüren
+                                                                <samp>
+                                                                    <b>GetViewBetween</b>
+                                                                </samp>
+                                                                yöntemini de desteklemektedir.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card border-success p-3 w-100">
+                                                    <div class="card-body">
+                                                        <code>
+                                                            <p>List&lt;string&gt; names = new List&lt;string&gt;()</p>
+                                                            <p>{</p>
+                                                            <p>"Melek", "Mükremin", "Jülide", "Ali Ziya",</p>
+                                                            <p>"Leyla", "Emine", "melek", "Jale", "Bayram"</p>
+                                                            <p>};</p>
+                                                            <p>SortedSet&lt;string&gt; sorted = new SortedSet&lt;string&gt;(</p>
+
+                                                            <p class="ms-3">names,</p>
+                                                            <p class="ms-5">Comparer&lt;string&gt;.Create(</p>
+                                                            <p class="ms-5">(a, b) => a.ToLower().CompareTo(b.ToLower()</p>
+
+                                                            <p class="ms-5">)</p>
+
+                                                            <p class="ms-3">)</p>
+
+                                                            <p>);</p>
+                                                            <p>
+                                                                foreach (string name in sorted)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Console.WriteLine(name);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                            </p>
+
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row justify-content-evenly mt-3">
+                                                <div class="card m-3 bg-success text-white w-25">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Array List (Dizi listeleri)
+                                                        </h5>
+                                                        <p>
+                                                            Gerektiğinde liste boyutunu düzenleme gereksinimi karşılayan ilk veri yapısı,
+                                                            <samp>System.Collections</samp>
+                                                            ad
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        alanından
+                                                            <samp>ArrayList</samp>
+                                                            sınıfı tarafından temsil edilen dizi listesidir. Bu sınıf, gerektiğinde kolayca yeni ögeler
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ekleyebileceğiniz büyük veri koleksiyonlarını depolamak için kullanılabilir. Bu sınıf ile ögeler kaldırılabilir,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        sayılabilir ve dizi listesinde saklanan belirli bir değerin indeksi bulunabilir.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card border-success p-3  w-75">
+
+                                                    <code>
+                                                        <p>ArrayList arrayList = new ArrayList();</p>
+                                                        <p>arrayList.AddRange(new int[] { 4, 3, -1 });</p>
+                                                        <p>arrayList.Add(7);</p>
+                                                        <p>arrayList.AddRange(new object[] { "Rabia", "Elif", "Kerem" });</p>
+                                                        <p>arrayList.Insert(5, 7.8);</p>
+                                                        <p>foreach (object element in arrayList)</p>
+                                                        <p>{</p>
+                                                        <p class="ms-3">Console.WriteLine(element);</p>
+                                                        <p>}</p>
+                                                        <hr>
+                                                            <p class="text-muted">
+                                                                <em>//Öğelere erişme</em>
+                                                            </p>
+                                                            <p>object birinci = arrayList[0];</p>
+                                                            <p>int ucuncu = (int)arrayList[2];</p>
+                                                            <p class="text-muted">
+                                                                <em>//Metodlar</em>
+                                                            </p>
+                                                            <p>int elemanSayisi = arrayList.Count;</p>
+                                                            <p>int kapasit = arrayList.Capacity;</p>
+                                                            <p>bool kisiVarmi = arrayList.Contains("Elif");</p>
+                                                            <p>int negatifIndex = arrayList.IndexOf(-7);</p>
+
+                                                            <p class="text-muted">
+                                                                <em>//Remove, RemoveAt, RemoveRange, Clear</em>
+                                                            </p>
+                                                            <p>arrayList.Remove(7) ;</p>
+                                                            <p class="text-muted">
+                                                                <em>// Diğer yöntemlerin yanı sıra, dizi listesindeki elemanların sırasını tersine çeviren
+                                                                    <b>Reverse</b>
+                                                                    ve ArrayList örneğinde depolanan tüm ögeleri içeren bir dizi döndüren
+                                                                    <b>ToArray</b>
+                                                                    metotları da mevcuttur.</em>
+                                                            </p>
+
+
+                                                        </code>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-row justify-content-evenly mt-3">
+                                                    <div class="card m-3 bg-success text-white w-25">
+                                                        <div class="card-body">
+                                                            <p>Güçlü yazılan bir listeden yararlanmak istenirse gerektiğinde
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                boyutu artırılıp azaltılabilen koleksiyonu temsil eden Generic List sınıfı kullanılabilir.</p>
+                                                            <h5>List&lt;T&gt;</h5>
+                                                            <ul>
+                                                                <li>List&LT;T&GT;, IList&LT;T&GT; arayüzünü uygulayan ArrayList’in eşdeğeridir.</li>
+                                                                <li>System.Collections.Generic ad alanı altında gelir.</li>
+                                                                <li>List&LT;T&GT;, belirtilen türdeki ögeleri içerebilir. Derleme zamanı tür denetimi sağlar ve genel olduğu için kutulama/kutudan çıkarma (boxing/unboxing) gerçekleştirmez.</li>
+                                                                <li>Ögeler, Add(), AddRange() y ntemleri veya koleksiyon başlatıcı sözdizimi kullanılarak eklenebilir.</li>
+                                                                <li>Ögelere bir dizin geçirilerek erişilebilir,  rneğin listem[0]. İndeksler sıfırdan başlar.</li>
+                                                                <li>List&LT;T&GT;, ArrayList’ten daha hızlı ve daha az hataya açık çalışır.</li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card border-success p-3 w-75">
+                                                        <div class="card-body">
+                                                            <code>
+                                                                <p>var sehirler = new List&lt;string&gt;();</p>
+                                                                <p>sehirler.Add("New York");</p>
+                                                                <p>sehirler.Add("İstanbul");</p>
+                                                                <p>sehirler.Add("London");</p>
+                                                                <p>sehirler.Add("Mumbai");</p>
+                                                                <p>sehirler.Add(null);
+                                                                    <span class="text-muted">// null değere izin veriliyor</span>
+                                                                </p>
+                                                                <hr>
+                                                                    <p class="text-muted">
+                                                                        <em>// koleksiyon başlatıcı ile eleman eklemeye izin vermektedir</em>
+                                                                    </p>
+                                                                    <p>var buyukSehirler = new List&lt;string&gt;() {"New York", "Mumbai", "İstanbul","London", "Paris"};</p>
+                                                                    <hr>
+                                                                        <p class="text-muted text-italic">// Özel sınıf elemanlarının listeye eklenmesi</p>
+                                                                        <p>var ogrenci = new List&lt;Ogrenci&gt;() {</p>
+
+                                                                        <p class="ms-3">new Ogrenci(){ Id = 1, İsim="Kerim"},</p>
+                                                                        <p class="ms-3">new Ogrenci(){ Id = 2, İsim="Erdem"},</p>
+                                                                        <p class="ms-3">new Ogrenci(){ Id = 3, İsim="Mesut"},</p>
+                                                                        <p class="ms-3">new Ogrenci(){ Id = 4, İsim="Dündar"}</p>
+
+                                                                        <p>};</p>
+                                                                        <p>class Ogrenci{</p>
+                                                                        <p class="ms-3">public int Id { get; set; }</p>
+                                                                        <p class="ms-3">public string İsim { get; set; }</p>
+                                                                        <p>}</p>
+                                                                    </code>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end container -->
+                                                    <!-- JavaScript Bundle with Popper -->
+                                                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+                                                </body>
+                                            </html>

@@ -1,0 +1,164 @@
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Veri Yapıları</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="../styles/styles.css"/>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bilgisayar Programcılığı 3. Dönem</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../MobilUygulamaGelistirme/index.html">Mobil Uygulama Geliştirme</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../ProglamaII/index.html">Programlama-II Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../WebArayuz/index.html">Web Arayüz Programlama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../VeriYapilari/index.html">Veri Yapıları</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../Unix/index.html">Unix Sistem Yönetimi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Veri Yapıları</h1>
+            <h3>Ders 1: Veri Yapılarına Giriş</h3>
+            <div class="d-flex flex-row justify-content-evenly">
+                <div class="card m-3 p-3 bg-primary text-white">
+                    <h5 class="card-title">Temel Kavramlar</h5>
+                    <ul>
+                        <li>
+                            <b>Veri,</b>
+                            bir nesne hakkındaki tüm niteliksel ve niceliksel değişkenliklerin sayısal değeridir.</li>
+                        <li class="ms-3">Bilgisayar verileri ise bilgisayar tarafından işlenen ve saklanan ses, video, metin, resim gibi çeşitli türlerdeki verilerdir</li>
+                        <li class="ms-3">Veriler tek başlarına anlam ifade etmezler. Bu halleriyle bilginin ham maddesi olarak görülmektedir. Veri sınıflandırılır, çeşitli süreçlere tabi tutularak işlenir ve bilgi seviyesine ulaşır.</li>
+                        <li>
+                            <b>Veri yapısı</b>
+                            ise bilgisayardaki dijital verileri depolamanın ve bu veriler üzerinde farklı eylemleri gerçekleştirmenin en kolay yolunu sağlayan bir veri ögeleri grubudur.</li>
+                        <li class="ms-3">Veri yapısı, bir bilgisayardaki verileri etkin bir şekilde kullanılabilecek şekilde düzenlemenin özel bir yoludur.</li>
+                        <li class="ms-3">Çeşitli veri yapıları türleri olarak: ağaç (tree) yapıları, yığınlar (stack), diziler (array), kuyruklar (queues), listeler vb. örnek gösterilebilir.</li>
+                        <li class="ms-3">Veri yapısı kullanmadaki amaç, farklı görevlerin uzay ve zaman karmaşıklığını azaltmaktır.</li>
+                        <li>
+                            <b>Veri türü,</b>
+                            derleyiciye veya yorumlayıcıya programcının verileri nasıl kullanmayı planladığını söyleyen bir veri sınıflandırmasıdır.
+                        </li>
+                        <li class="ms-3">Çoğu programlama dili, tamsayı (int), ger ek (reel), karakter (char) veya dize (string) ve Boolean dahil olmak üzere çeşitli veri türlerini desteklemektedir.</li>
+
+
+                    </ul>
+                </div>
+                <img src="../assets/images/veri_turleri.png" alt="">
+
+            </div>
+            <div class="d-flex flex-row justify-content-evenly">
+
+                <div class="card m-3 border-primary">
+                    <div class="card-header text-white bg-primary">
+                        <h5 class="card-title">Veri Yapıları Neden Gereklidir?</h5>
+                    </div>
+                    <div class="card-body ">
+                        <dl>
+
+
+                            <dt>Çok sayıda istek:
+                            </dt>
+                            <dd>Aynı anda, birden çok kullanıcıdan gelen isteklerin işlenebilmesi amacıyla veri yapılarına ihtiyaç duyulmaktadır.</dd>
+                            <dt>İşlem hızı:
+                            </dt>
+                            <dd>Çok büyük verilerin işlenebilmesi için yüksek hızlı işlem kapasitesine ihtiyaç duyulmaktadır fakat her zaman yüksek hızda işlemek, bu soruna çözüm olamayabilir.</dd>
+                            <dt>Veri arama:
+                            </dt>
+                            <dd>Veritabanı gibi bir kaynaktan istenen verinin elde edilmesi, optimum süre ve işlem hızı ile gerçekleştirilmelidir.</dd>
+                        </dl>
+
+                    </div>
+                </div>
+                <div class="card m-3 border-success">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="card-title">Veri Yapıların Avantajları</h5>
+                    </div>
+                    <div class="card-body ">
+                        <dl>
+
+
+                            <dt>1. Soyutlama (abstraction):</dt>
+                            <dd>Soyut veri türleri, veri yapılarının üzerine inşa edilmiştir. Fiziksel formları veri yapıları tarafından sağlanmaktadır.</dd>
+
+                            <dt>2. Hafızanın verimli kullanımı:</dt>
+                            <dd>Bellek kullanımı, veri yapısının verimli kullanımı ile optimize edilebilir. Örnek olarak, veri boyutunun bilinmediği durumlarda dizi kullanmak yerine bağlı listelerin kullanımı tercih edilebilir.</dd>
+
+                            <dt>3. Yeniden kullanılabilirlik:</dt>
+                            <dd>Veri yapıları yeniden kullanılabilir bir yapıdadır. Belirli bir veri yapısı bir kez uygulandığında aynı yapı başka bir yerde de kullanılabilir. Veri yapısı uygulamaları, farklıkullanımları destekleyen kütüphanelerde birleştirilebilir.</dd>
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-evenly">
+                <div class="card m-3">
+                    <img src="../assets/images/veri_yapisi_siniflari.png" alt="">
+                </div>
+                <div class="card m-3">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <b>Doğrusal Veri Yapısı</b>
+                            </li>
+                            <ul>
+                                <li>
+                                    <b>Statik:</b>
+                                    Statik veri yapısı sabit bir hafıza boyutuna sahiptir. Statik bir veri yapısındaki ögelere erişmek daha kolaydır.
+                                    <mark>Diziler</mark>
+
+
+                                </li>
+
+
+                                <li>
+                                    <b>Dinamik:
+                                    </b>Dinamik veri yapısında boyut sabit değildir. Kodun çalışma zamanı sırasında,
+                                                                                                                                                                                                                                                                                            bellek (alan) karmaşıklığı ile ilgili olarak verimli kabul edilebileceği anda rastgele güncellenebilir.<mark>Kuyruk, yığın</mark>
+                                </li>
+
+                            </ul>
+
+
+                            <li>
+                                <b>Doğrusal Olmayan Veri Yapısı</b>
+                            </li>
+                            <li class="ms-3">Doğrusal olmayan bir veri yapısında, tüm ögeleri yalnızca tek bir döngüde göremeyiz.
+                                <mark>Ağaçlar, grafikler</mark>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-evenly">
+                <img src="../assets/images/bigO.png" alt="">
+            </div>
+        </body>
+    </body>
+</html>
